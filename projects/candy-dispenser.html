@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Robotic Candy Dispenser | Ilan Dascher
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h2>
+                <a href="../index.html" class="nav-name">
+                    Ilan Dascher
+                </a>
+            </h2>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+
+        </nav>
+
+
+        <div class="project-hero">
+
+            <p class="project-label">
+                Robotics • Embedded Systems
+            </p>
+
+            <h1>
+                Robotic Candy Dispenser
+            </h1>
+
+            <p class="project-summary">
+                A team-based autonomous dispensing system combining
+                computer vision, Arduino programming, servo control,
+                mechanical linkages, and embedded electronics.
+            </p>
+
+            <div class="tech-tags project-page-tags">
+
+                <span>Arduino</span>
+                <span>PixyCam</span>
+                <span>Computer Vision</span>
+                <span>Servo Motors</span>
+                <span>Robotics</span>
+                <span>Embedded Systems</span>
+
+            </div>
+
+            <div class="project-hero-links">
+
+                <a
+                    href="https://youtube.com/shorts/zyL90W8pS90?si=U88hbHphQnXdbIb9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button"
+                >
+                    Watch Demo
+                </a>
+
+                <a
+                    href="../reports/candy-dispenser-report.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-secondary"
+                >
+                    Technical Report
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="project-page">
+
+        <section>
+
+            <h2>Project Overview</h2>
+
+            <img
+                src="../images/candy-dispenser-main.jpg"
+                alt="Completed robotic candy dispenser"
+                class="detail-image project-photo-detail"
+            >
+
+            <p>
+                The Robotic Candy Dispenser was a team engineering project
+                designed to automatically detect visual inputs and dispense
+                different candy selections.
+            </p>
+
+            <p>
+                The system combined mechanical design, sensors, computer vision,
+                Arduino programming, motors, and servo-driven mechanisms into
+                one integrated robotic platform.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Computer Vision & Control</h2>
+
+            <div class="detail-grid">
+
+                <figure>
+
+                    <img
+                        src="../images/candy-dispenser-pixycam.jpg"
+                        alt="PixyCam sensor used by the robotic candy dispenser"
+                    >
+
+                    <figcaption>
+                        PixyCam sensor used for object and color recognition.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="../images/candy-dispenser-linkage.jpg"
+                        alt="Four-bar linkage mechanism of the robotic candy dispenser"
+                    >
+
+                    <figcaption>
+                        Four-bar linkage used to present the selected candy.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+            <p>
+                A PixyCam camera was used to identify objects and colors.
+                The Arduino control system interpreted the detected signatures
+                and triggered the appropriate servo movements.
+            </p>
+
+            <p>
+                Different detected colors corresponded to different candy
+                chutes, allowing the system to control which candy was released.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Mechanical System</h2>
+
+            <p>
+                The robot used several interconnected mechanical systems,
+                including three candy chutes, two four-bar linkages,
+                servo-controlled dispensing doors, and a motor-driven
+                wheel system.
+            </p>
+
+            <ul class="project-detail-list">
+
+                <li>
+                    Three inclined chutes stored different candy selections
+                </li>
+
+                <li>
+                    A servo-controlled door selected which chute was opened
+                </li>
+
+                <li>
+                    Dual four-bar linkages moved the presentation platform
+                </li>
+
+                <li>
+                    DC motors powered the robot's wheel system
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>Programming & Embedded Control</h2>
+
+            <p>
+                The Arduino program initialized the PixyCam and multiple servo
+                motors, read detected visual signatures, selected the appropriate
+                chute, and coordinated the linkage system used to present the candy.
+            </p>
+
+            <ul class="project-detail-list">
+
+                <li>
+                    Initialized and read visual signatures from the PixyCam
+                </li>
+
+                <li>
+                    Controlled multiple servo motors for chute selection
+                    and linkage movement
+                </li>
+
+                <li>
+                    Used conditional control logic to respond to recognized
+                    colors and objects
+                </li>
+
+                <li>
+                    Coordinated sensing and mechanical actuation into one
+                    automated sequence
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section class="video-section">
+
+            <h2>Project Demo</h2>
+
+            <p>
+                The video below demonstrates the completed robot in operation.
+            </p>
+
+            <div class="video-wrapper">
+
+                <iframe
+                    src="https://www.youtube.com/embed/zyL90W8pS90"
+                    title="Robotic Candy Dispenser Demonstration"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>What I Learned</h2>
+
+            <p>
+                This project gave me experience integrating software and
+                physical hardware into one complete system. I worked with
+                sensors, Arduino programming, servo control, mechanical
+                mechanisms, testing, and troubleshooting.
+            </p>
+
+            <p>
+                It also helped develop my interest in the intersection of
+                computer science, robotics, and intelligent physical systems.
+            </p>
+
+        </section>
+
+
+        <section class="project-resource-section">
+
+            <h2>Project Resources</h2>
+
+            <div class="resource-links">
+
+                <a
+                    href="https://youtube.com/shorts/zyL90W8pS90?si=U88hbHphQnXdbIb9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-button"
+                >
+                    Watch Robot Demo
+                </a>
+
+                <a
+                    href="../reports/candy-dispenser-report.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-button project-button-secondary-light"
+                >
+                    View Full Technical Report
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <div class="back-link">
+
+            <a href="../index.html#projects">
+                ← Back to Projects
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2026 Ilan Dascher
+    </footer>
+
+</body>
+
+</html>

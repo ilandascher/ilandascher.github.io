@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        MATLAB Dynamic System Simulation | Ilan Dascher
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h2>
+                <a href="../index.html" class="nav-name">
+                    Ilan Dascher
+                </a>
+            </h2>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+
+        </nav>
+
+
+        <div class="project-hero">
+
+            <p class="project-label">
+                MATLAB • Numerical Computing
+            </p>
+
+            <h1>
+                Dynamic System Simulation & Parameter Estimation
+            </h1>
+
+            <p class="project-summary">
+                A numerical modeling and data-analysis project involving
+                dynamic-system simulation, noisy measurement data,
+                parameter estimation, error minimization, and
+                time-series analysis.
+            </p>
+
+            <div class="tech-tags project-page-tags">
+
+                <span>MATLAB</span>
+                <span>Numerical Methods</span>
+                <span>Data Analysis</span>
+                <span>Simulation</span>
+                <span>Parameter Estimation</span>
+
+            </div>
+
+            <div class="project-hero-links">
+
+                <a
+                    href="../reports/matlab-dynamic-system-report.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button"
+                >
+                    View Technical Report
+                </a>
+
+                <a
+                    href="../index.html#projects"
+                    class="button button-secondary"
+                >
+                    Back to Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="project-page">
+
+        <section>
+
+            <h2>Project Overview</h2>
+
+            <p>
+                This project involved developing a MATLAB simulation of a
+                three-mass dynamic system using numerical integration.
+                Noisy displacement and velocity measurements were provided,
+                and I used the simulation to estimate unknown physical
+                parameters and analyze the system's behavior.
+            </p>
+
+            <p>
+                The project combined programming, applied mathematics,
+                numerical methods, data analysis, and physical modeling.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Parameter Estimation</h2>
+
+            <img
+                src="../images/matlab-parameter-estimation.jpg"
+                alt="MATLAB simulated displacement compared with noisy measured data during mass estimation"
+                class="detail-image"
+            >
+
+            <p>
+                I tested candidate values for an unknown component mass
+                and simulated the resulting displacement trajectory.
+                Each simulation was compared with the provided measurement
+                data using mean squared error.
+            </p>
+
+            <div class="result-box">
+
+                <p class="result-label">
+                    Best estimated mass
+                </p>
+
+                <p class="result-value">
+                    121 kg
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Numerical Simulation</h2>
+
+            <p>
+                After estimating the unknown mass, I implemented Forward Euler
+                integration to simulate the displacement and velocity of all
+                three masses across the system.
+            </p>
+
+            <div class="detail-grid">
+
+                <figure>
+
+                    <img
+                        src="../images/matlab-displacements.jpg"
+                        alt="MATLAB displacement versus time plot for three masses"
+                    >
+
+                    <figcaption>
+                        Simulated displacement of all three masses
+                        over the 300-second interval.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="../images/matlab-velocities.jpg"
+                        alt="MATLAB velocity versus time plot for three masses"
+                    >
+
+                    <figcaption>
+                        Simulated velocity of all three masses
+                        over the 300-second interval.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>System Analysis</h2>
+
+            <p>
+                The simulation was also used to evaluate several
+                engineering and numerical quantities.
+            </p>
+
+            <ul class="project-detail-list">
+
+                <li>
+                    Determined the minimum component separation required
+                    to prevent contact
+                </li>
+
+                <li>
+                    Identified the global maximum velocity magnitude
+                    reached by the system
+                </li>
+
+                <li>
+                    Calculated the minimum instantaneous gap between
+                    adjacent components
+                </li>
+
+                <li>
+                    Calculated the mean velocity of the first mass
+                    during the initial 10 seconds
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>Damping Parameter Fitting</h2>
+
+            <img
+                src="../images/matlab-damping-fit.jpg"
+                alt="MATLAB simulation and measured velocity data used to fit the damping coefficient"
+                class="detail-image"
+            >
+
+            <p>
+                I extended the model beyond 300 seconds and introduced
+                an additional damping force acting on the first mass.
+            </p>
+
+            <p>
+                I performed a parameter sweep across candidate damping
+                coefficients. For each candidate, the simulated response
+                was compared with the measured data using mean squared error.
+            </p>
+
+            <div class="result-box">
+
+                <p class="result-label">
+                    Best-fit damping coefficient
+                </p>
+
+                <p class="result-value">
+                    49 N·s/m
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Key Technical Work</h2>
+
+            <ul class="project-detail-list">
+
+                <li>
+                    Implemented Forward Euler numerical integration in MATLAB
+                </li>
+
+                <li>
+                    Processed noisy displacement and velocity measurement data
+                </li>
+
+                <li>
+                    Used mean squared error to evaluate model accuracy
+                </li>
+
+                <li>
+                    Implemented iterative parameter-search techniques
+                </li>
+
+                <li>
+                    Analyzed system constraints and time-series behavior
+                </li>
+
+                <li>
+                    Created data visualizations comparing measured
+                    and simulated results
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>What I Learned</h2>
+
+            <p>
+                This project strengthened my understanding of how mathematical
+                models can be converted into computational simulations.
+                It also gave me experience working with imperfect measurement
+                data and using quantitative error metrics to estimate parameters.
+            </p>
+
+            <p>
+                The project was especially valuable because it combined concepts
+                from mathematics, programming, data analysis, and engineering —
+                the intersection I am continuing to explore through Applied
+                Mathematics & Statistics and Computer Science.
+            </p>
+
+        </section>
+
+
+        <section class="project-resource-section">
+
+            <h2>Project Resources</h2>
+
+            <p>
+                A sanitized version of the full technical report is available
+                for additional methodology, calculations, results, and figures.
+            </p>
+
+            <a
+                href="../reports/matlab-dynamic-system-report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button"
+            >
+                View Full Technical Report
+            </a>
+
+        </section>
+
+
+        <div class="back-link">
+
+            <a href="../index.html#projects">
+                ← Back to Projects
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        © 2026 Ilan Dascher
+    </footer>
+
+</body>
+
+</html>
