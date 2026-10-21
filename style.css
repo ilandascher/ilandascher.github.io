@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +23,7 @@ body {
 
     line-height: 1.6;
 }
+
 
 img {
     max-width: 100%;
@@ -43,7 +46,7 @@ header {
 ======================================== */
 
 nav {
-    max-width: 1050px;
+    max-width: 1100px;
 
     margin: 0 auto;
 
@@ -56,9 +59,27 @@ nav {
     align-items: center;
 }
 
+
 nav h2 {
     margin: 0;
 }
+
+
+.nav-name {
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
 
 nav a {
     color: white;
@@ -68,23 +89,14 @@ nav a {
     font-weight: bold;
 }
 
+
 nav a:hover {
     color: #93c5fd;
 }
 
-.nav-name {
-    color: white;
-}
-
-.nav-links {
-    display: flex;
-
-    gap: 24px;
-}
-
 
 /* ========================================
-   HOMEPAGE HERO
+   HERO
 ======================================== */
 
 .hero {
@@ -92,13 +104,11 @@ nav a:hover {
 
     margin: 0 auto;
 
-    padding:
-        90px
-        20px
-        110px;
+    padding: 95px 20px 115px;
 
     text-align: center;
 }
+
 
 .hero-label {
     color: #93c5fd;
@@ -114,51 +124,51 @@ nav a:hover {
     margin-bottom: 12px;
 }
 
+
 .hero h1 {
-    font-size: 3.3rem;
+    font-size: 3.4rem;
 
     line-height: 1.1;
 
-    margin:
-        0
-        0
-        15px;
+    margin: 0 0 16px;
 }
 
+
 .hero h2 {
-    font-size: 1.45rem;
+    max-width: 760px;
+
+    margin: 0 auto 22px;
+
+    font-size: 1.5rem;
 
     font-weight: normal;
-
-    margin-bottom: 22px;
 
     color: #e5e7eb;
 }
 
-.hero p {
-    max-width: 700px;
 
-    margin:
-        0
-        auto
-        32px;
+.hero p {
+    max-width: 720px;
+
+    margin: 0 auto 32px;
 
     font-size: 1.08rem;
 }
+
 
 .hero-buttons {
     display: flex;
 
     justify-content: center;
 
-    gap: 15px;
-
     flex-wrap: wrap;
+
+    gap: 14px;
 }
 
 
 /* ========================================
-   BUTTONS
+   MAIN BUTTONS
 ======================================== */
 
 .button {
@@ -170,22 +180,20 @@ nav a:hover {
 
     text-decoration: none;
 
-    padding:
-        12px
-        22px;
+    padding: 12px 22px;
 
     border-radius: 7px;
 
-    font-weight: bold;
+    border: 1px solid #2563eb;
 
-    border:
-        1px solid #2563eb;
+    font-weight: bold;
 
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
 }
+
 
 .button:hover {
     background-color: #1d4ed8;
@@ -195,12 +203,13 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+
 .button-secondary {
     background-color: transparent;
 
-    border:
-        1px solid white;
+    border-color: white;
 }
+
 
 .button-secondary:hover {
     background-color: white;
@@ -210,7 +219,7 @@ nav a:hover {
 
 
 /* ========================================
-   MAIN CONTENT
+   MAIN
 ======================================== */
 
 main {
@@ -218,22 +227,23 @@ main {
 
     margin: 0 auto;
 
-    padding:
-        55px
-        20px;
+    padding: 60px 20px;
 }
+
 
 section {
-    margin-bottom: 65px;
+    margin-bottom: 75px;
+
+    scroll-margin-top: 30px;
 }
 
-section h2 {
-    margin-bottom: 22px;
+
+section > h2 {
+    margin-bottom: 24px;
 
     padding-bottom: 9px;
 
-    border-bottom:
-        2px solid #d1d5db;
+    border-bottom: 2px solid #d1d5db;
 }
 
 
@@ -248,8 +258,7 @@ article {
 
     margin-bottom: 28px;
 
-    border:
-        1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
 
     border-radius: 12px;
 
@@ -257,8 +266,55 @@ article {
         0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+
 article h3 {
     margin-top: 0;
+}
+
+
+/* ========================================
+   EDUCATION
+======================================== */
+
+.education-card {
+    padding: 28px;
+}
+
+
+.education-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+
+.education-heading h3 {
+    margin-bottom: 4px;
+}
+
+
+.education-degree {
+    margin: 0 0 2px;
+
+    font-weight: bold;
+}
+
+
+.education-heading p {
+    margin-top: 2px;
+}
+
+
+.education-date {
+    white-space: nowrap;
+
+    color: #6b7280;
+
+    font-weight: bold;
 }
 
 
@@ -276,6 +332,7 @@ article h3 {
         box-shadow 0.2s ease;
 }
 
+
 .project-card:hover {
     transform: translateY(-4px);
 
@@ -283,9 +340,11 @@ article h3 {
         0 10px 24px rgba(0, 0, 0, 0.10);
 }
 
+
 .project-card-content {
-    padding: 26px;
+    padding: 28px;
 }
+
 
 .project-type {
     color: #2563eb;
@@ -298,10 +357,48 @@ article h3 {
 
     font-weight: bold;
 
-    margin:
-        0
-        0
-        8px;
+    margin: 0 0 8px;
+}
+
+
+.project-heading-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+
+.status-badge {
+    display: inline-block;
+
+    white-space: nowrap;
+
+    background-color: #fef3c7;
+
+    color: #92400e;
+
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+}
+
+
+.project-progress-note {
+    margin-top: 20px;
+
+    color: #6b7280;
+
+    font-size: 0.9rem;
+
+    font-style: italic;
 }
 
 
@@ -314,9 +411,9 @@ article h3 {
 
     display: block;
 
-    border-bottom:
-        1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
 }
+
 
 .project-photo {
     max-height: 470px;
@@ -325,6 +422,7 @@ article h3 {
 
     background-color: #f8fafc;
 }
+
 
 .project-plot {
     height: auto;
@@ -346,19 +444,16 @@ article h3 {
 
     gap: 8px;
 
-    margin:
-        17px
-        0;
+    margin: 17px 0;
 }
+
 
 .tech-tags span {
     background-color: #e0e7ff;
 
     color: #1e3a8a;
 
-    padding:
-        5px
-        10px;
+    padding: 5px 10px;
 
     border-radius: 20px;
 
@@ -369,7 +464,7 @@ article h3 {
 
 
 /* ========================================
-   HOMEPAGE PROJECT LINKS
+   PROJECT BUTTONS
 ======================================== */
 
 .project-links {
@@ -382,6 +477,7 @@ article h3 {
     margin-top: 24px;
 }
 
+
 .project-button {
     display: inline-block;
 
@@ -391,21 +487,19 @@ article h3 {
 
     text-decoration: none;
 
-    padding:
-        10px
-        16px;
+    padding: 10px 16px;
 
     border-radius: 6px;
 
+    border: 1px solid #2563eb;
+
     font-weight: bold;
 
-    border:
-        1px solid #2563eb;
-
     transition:
-        transform 0.2s ease,
-        background-color 0.2s ease;
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
+
 
 .project-button:hover {
     background-color: #1d4ed8;
@@ -413,11 +507,13 @@ article h3 {
     transform: translateY(-2px);
 }
 
+
 .project-button-secondary {
     background-color: white;
 
     color: #2563eb !important;
 }
+
 
 .project-button-secondary:hover {
     background-color: #eff6ff;
@@ -429,11 +525,79 @@ article h3 {
 ======================================== */
 
 ul {
-    padding-left: 21px;
+    padding-left: 22px;
 }
 
+
 li {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+}
+
+
+/* ========================================
+   EXPERIENCE
+======================================== */
+
+.experience-meta {
+    color: #4b5563;
+}
+
+
+/* ========================================
+   SKILLS
+======================================== */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.skill-card {
+    background-color: white;
+
+    padding: 22px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.skill-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 16px;
+}
+
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.skill-tags span {
+    background-color: #f1f5f9;
+
+    border: 1px solid #e2e8f0;
+
+    color: #334155;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    font-size: 0.85rem;
 }
 
 
@@ -441,20 +605,39 @@ li {
    CONTACT
 ======================================== */
 
-.contact-links {
-    display: flex;
+.contact-card {
+    background-color: white;
 
-    gap: 20px;
+    padding: 32px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.contact-card h2 {
+    margin-top: 0;
+
+    border: 0;
+
+    padding: 0;
+
+    margin-bottom: 12px;
+}
+
+
+.contact-buttons {
+    display: flex;
 
     flex-wrap: wrap;
 
-    margin-top: 20px;
-}
+    gap: 12px;
 
-.contact-links a {
-    font-weight: bold;
-
-    text-decoration: none;
+    margin-top: 24px;
 }
 
 
@@ -465,6 +648,7 @@ li {
 main a {
     color: #2563eb;
 }
+
 
 main a:hover {
     color: #1d4ed8;
@@ -480,11 +664,9 @@ main a:hover {
 
     margin: 0 auto;
 
-    padding:
-        70px
-        20px
-        90px;
+    padding: 70px 20px 90px;
 }
+
 
 .project-label {
     color: #93c5fd;
@@ -500,16 +682,15 @@ main a:hover {
     margin: 0;
 }
 
+
 .project-hero h1 {
     font-size: 2.9rem;
 
     line-height: 1.2;
 
-    margin:
-        10px
-        0
-        20px;
+    margin: 10px 0 20px;
 }
+
 
 .project-summary {
     max-width: 750px;
@@ -519,9 +700,11 @@ main a:hover {
     color: #e5e7eb;
 }
 
+
 .project-page-tags {
     margin-top: 25px;
 }
+
 
 .project-hero-links {
     display: flex;
@@ -535,15 +718,11 @@ main a:hover {
 
 
 /* ========================================
-   DETAIL PAGE
+   PROJECT DETAIL PAGE
 ======================================== */
 
 .project-page {
     max-width: 900px;
-}
-
-.project-page section {
-    scroll-margin-top: 30px;
 }
 
 
@@ -558,17 +737,15 @@ main a:hover {
 
     display: block;
 
-    margin:
-        25px
-        0;
+    margin: 25px 0;
 
-    border:
-        1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
 
     border-radius: 10px;
 
     background-color: white;
 }
+
 
 .project-photo-detail {
     max-height: 600px;
@@ -578,21 +755,19 @@ main a:hover {
 
 
 /* ========================================
-   IMAGE GRID
+   PROJECT DETAIL IMAGE GRID
 ======================================== */
 
 .detail-grid {
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
 
-    margin:
-        25px
-        0;
+    margin: 25px 0;
 }
+
 
 .detail-grid figure {
     margin: 0;
@@ -603,9 +778,9 @@ main a:hover {
 
     overflow: hidden;
 
-    border:
-        1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
 }
+
 
 .detail-grid img {
     width: 100%;
@@ -617,11 +792,9 @@ main a:hover {
     object-fit: contain;
 }
 
+
 .detail-grid figcaption {
-    padding:
-        10px
-        12px
-        12px;
+    padding: 10px 12px 12px;
 
     color: #6b7280;
 
@@ -638,19 +811,15 @@ main a:hover {
 .result-box {
     background-color: #eff6ff;
 
-    border-left:
-        4px solid #2563eb;
+    border-left: 4px solid #2563eb;
 
-    padding:
-        16px
-        20px;
+    padding: 16px 20px;
 
-    margin:
-        24px
-        0;
+    margin: 24px 0;
 
     border-radius: 6px;
 }
+
 
 .result-label {
     margin: 0;
@@ -666,11 +835,9 @@ main a:hover {
     letter-spacing: 0.06em;
 }
 
+
 .result-value {
-    margin:
-        4px
-        0
-        0;
+    margin: 4px 0 0;
 
     font-size: 1.6rem;
 
@@ -681,29 +848,20 @@ main a:hover {
 
 
 /* ========================================
-   DETAIL LISTS
+   DETAIL LIST
 ======================================== */
 
 .project-detail-list {
     background-color: white;
 
-    padding:
-        24px
-        25px
-        24px
-        45px;
+    padding: 24px 25px 24px 45px;
 
-    border:
-        1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
 
     border-radius: 10px;
 
     box-shadow:
         0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.project-detail-list li {
-    margin-bottom: 9px;
 }
 
 
@@ -730,6 +888,7 @@ main a:hover {
         0 4px 14px rgba(0, 0, 0, 0.10);
 }
 
+
 .video-wrapper iframe {
     position: absolute;
 
@@ -754,14 +913,14 @@ main a:hover {
 
     padding: 26px;
 
-    border:
-        1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
 
     border-radius: 12px;
 
     box-shadow:
         0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 
 .resource-links {
     display: flex;
@@ -773,11 +932,13 @@ main a:hover {
     margin-top: 20px;
 }
 
+
 .project-button-secondary-light {
     background-color: white;
 
     color: #2563eb !important;
 }
+
 
 .project-button-secondary-light:hover {
     background-color: #eff6ff;
@@ -789,17 +950,16 @@ main a:hover {
 ======================================== */
 
 .back-link {
-    margin:
-        40px
-        0
-        20px;
+    margin: 40px 0 20px;
 }
+
 
 .back-link a {
     font-weight: bold;
 
     text-decoration: none;
 }
+
 
 .back-link a:hover {
     text-decoration: underline;
@@ -813,7 +973,7 @@ main a:hover {
 footer {
     text-align: center;
 
-    padding: 25px;
+    padding: 28px 20px;
 
     background-color: #e5e7eb;
 
@@ -821,38 +981,63 @@ footer {
 }
 
 
+footer p {
+    margin: 2px 0;
+}
+
+
+.footer-subtext {
+    font-size: 0.82rem;
+
+    color: #6b7280;
+}
+
+
 /* ========================================
    RESPONSIVE DESIGN
 ======================================== */
+
+@media (max-width: 850px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 
 @media (max-width: 700px) {
 
     nav {
         flex-direction: column;
 
-        gap: 15px;
+        gap: 16px;
     }
+
 
     .nav-links {
         flex-wrap: wrap;
 
         justify-content: center;
+
+        gap: 10px 18px;
     }
+
 
     .hero {
-        padding:
-            65px
-            20px
-            80px;
+        padding: 65px 20px 85px;
     }
 
+
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
     }
+
 
     .hero h2 {
         font-size: 1.2rem;
     }
+
 
     .hero-buttons {
         flex-direction: column;
@@ -860,16 +1045,35 @@ footer {
         align-items: center;
     }
 
-    .project-hero {
-        padding:
-            50px
-            20px
-            70px;
+
+    .education-heading {
+        flex-direction: column;
+
+        gap: 5px;
     }
+
+
+    .education-date {
+        margin-top: 0;
+    }
+
+
+    .project-heading-row {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .project-hero {
+        padding: 50px 20px 70px;
+    }
+
 
     .project-hero h1 {
         font-size: 2.15rem;
     }
+
 
     .project-hero-links {
         flex-direction: column;
@@ -877,18 +1081,21 @@ footer {
         align-items: flex-start;
     }
 
+
     .detail-grid {
         grid-template-columns: 1fr;
     }
+
 
     .project-photo {
         max-height: none;
     }
 
-    .contact-links {
+
+    .contact-buttons {
         flex-direction: column;
 
-        gap: 8px;
+        align-items: flex-start;
     }
 
 }

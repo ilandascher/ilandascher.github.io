@@ -4,25 +4,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Ilan Dascher, an Applied Mathematics & Statistics student at Stony Brook University pursuing Computer Science, with projects in software, data analysis, numerical computing, and robotics."
+    >
+
     <title>Ilan Dascher | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <header>
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header id="top">
 
         <nav>
-            <h2>Ilan Dascher</h2>
+
+            <h2>
+                <a href="#top" class="nav-name">
+                    Ilan Dascher
+                </a>
+            </h2>
+
 
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#experience">
+                    Experience
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a
+                    href="resume/Ilan-Dascher-Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Resume
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
             </div>
+
         </nav>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <div class="hero">
 
@@ -30,24 +83,45 @@
                 Applied Mathematics & Statistics + Computer Science
             </p>
 
-            <h1>Ilan Dascher</h1>
+
+            <h1>
+                Ilan Dascher
+            </h1>
+
 
             <h2>
                 Building at the intersection of software,
                 data, mathematics, and engineering.
             </h2>
 
+
             <p>
-                Applied Mathematics & Statistics student at Stony Brook University
-                pursuing Computer Science, with interests in software development,
-                data analysis, robotics, and quantitative problem-solving.
+                Applied Mathematics & Statistics student at Stony Brook
+                University pursuing Computer Science, with interests in
+                software development, data analysis, numerical computing,
+                robotics, and quantitative problem-solving.
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="button">
+                <a
+                    href="#projects"
+                    class="button"
+                >
                     View My Projects
                 </a>
+
+
+                <a
+                    href="resume/Ilan-Dascher-Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-secondary"
+                >
+                    View Resume
+                </a>
+
 
                 <a
                     href="mailto:ilan.dascher@stonybrook.edu"
@@ -63,38 +137,194 @@
     </header>
 
 
+
     <main>
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
         <section id="about">
 
-            <h2>About Me</h2>
+            <h2>
+                About Me
+            </h2>
+
 
             <p>
-                I am an <strong>Applied Mathematics & Statistics</strong> student
-                at Stony Brook University pursuing Computer Science.
+                I am an <strong>Applied Mathematics & Statistics</strong>
+                student at Stony Brook University pursuing Computer Science.
             </p>
 
-            <p>
-                My background spans engineering, programming, mathematical modeling,
-                robotics, and technical project work. I enjoy developing solutions
-                that combine analytical thinking with software and real-world systems.
-            </p>
 
             <p>
-                I am currently continuing to strengthen my programming and computer
-                science skills while exploring areas such as software development,
-                data analysis, numerical computing, algorithms, and intelligent systems.
+                My background spans engineering, programming, mathematical
+                modeling, robotics, and technical project work. I enjoy
+                developing solutions that combine analytical thinking,
+                software, data, and real-world systems.
+            </p>
+
+
+            <p>
+                I am continuing to strengthen my computer science background
+                through object-oriented programming, algorithms, discrete
+                mathematics, and personal software projects while building
+                on my previous engineering and quantitative experience.
             </p>
 
         </section>
 
 
+
+        <!-- =========================
+             EDUCATION
+        ========================== -->
+
+        <section id="education">
+
+            <h2>
+                Education
+            </h2>
+
+
+            <article class="education-card">
+
+                <div class="education-heading">
+
+                    <div>
+
+                        <h3>
+                            Stony Brook University
+                        </h3>
+
+                        <p class="education-degree">
+                            B.S. Applied Mathematics & Statistics
+                        </p>
+
+                        <p>
+                            Pursuing Computer Science
+                        </p>
+
+                    </div>
+
+
+                    <p class="education-date">
+                        Expected May 2029
+                    </p>
+
+                </div>
+
+
+                <p>
+                    <strong>Relevant Coursework:</strong>
+                    Object-Oriented Programming, Foundations of Computer
+                    Science, Calculus II–IV, Linear Algebra, and
+                    Engineering Computing & Problem Solving
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
         <section id="projects">
 
-            <h2>Projects</h2>
+            <h2>
+                Projects
+            </h2>
 
 
-            <!-- MATLAB PROJECT -->
+            <!-- =====================
+                 C++ PROJECT
+            ====================== -->
+
+            <article class="project-card">
+
+                <div class="project-card-content">
+
+                    <div class="project-heading-row">
+
+                        <div>
+
+                            <p class="project-type">
+                                C++ • Algorithms • Software Development
+                            </p>
+
+
+                            <h3>
+                                Pathfinding & Robot Navigation Visualizer
+                            </h3>
+
+                        </div>
+
+
+                        <span class="status-badge">
+                            Currently Building
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Developing a C++ application focused on pathfinding
+                        and robot-navigation algorithms in grid-based
+                        environments, with the goal of visualizing how
+                        different search algorithms find routes around
+                        obstacles.
+                    </p>
+
+
+                    <div class="tech-tags">
+
+                        <span>C++</span>
+                        <span>Algorithms</span>
+                        <span>Data Structures</span>
+                        <span>Pathfinding</span>
+                        <span>Robotics</span>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Building a grid-based environment for navigation
+                            and obstacle placement
+                        </li>
+
+                        <li>
+                            Planning implementations of BFS, DFS,
+                            Dijkstra's algorithm, and A*
+                        </li>
+
+                        <li>
+                            Exploring differences in search behavior,
+                            path quality, and algorithm efficiency
+                        </li>
+
+                    </ul>
+
+
+                    <p class="project-progress-note">
+                        This project is actively being developed. Code,
+                        visualizations, and a dedicated project page will
+                        be added as development progresses.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =====================
+                 MATLAB PROJECT
+            ====================== -->
 
             <article class="project-card">
 
@@ -102,7 +332,9 @@
                     src="images/matlab-parameter-estimation.jpg"
                     alt="MATLAB simulation compared with noisy measurement data for parameter estimation"
                     class="project-image project-plot"
+                    loading="lazy"
                 >
+
 
                 <div class="project-card-content">
 
@@ -110,37 +342,49 @@
                         Numerical Computing & Data Analysis
                     </p>
 
+
                     <h3>
                         Dynamic System Simulation & Parameter Estimation
                     </h3>
 
+
                     <p>
-                        Developed a MATLAB numerical simulation of a multi-mass
-                        dynamic system and used noisy measurement data to estimate
-                        unknown physical parameters and analyze system behavior.
+                        Developed a MATLAB numerical simulation of a
+                        multi-mass dynamic system and used noisy measurement
+                        data to estimate unknown physical parameters and
+                        analyze system behavior.
                     </p>
 
+
                     <div class="tech-tags">
+
                         <span>MATLAB</span>
                         <span>Numerical Methods</span>
                         <span>Data Analysis</span>
                         <span>Simulation</span>
                         <span>Parameter Estimation</span>
+
                     </div>
 
+
                     <ul>
+
                         <li>
                             Implemented Forward Euler numerical integration
                         </li>
 
                         <li>
-                            Used mean squared error to estimate unknown system parameters
+                            Used mean squared error to estimate unknown
+                            system parameters
                         </li>
 
                         <li>
-                            Performed parameter sweeps and analyzed simulated time-series data
+                            Performed parameter sweeps and analyzed
+                            simulated time-series data
                         </li>
+
                     </ul>
+
 
                     <div class="project-links">
 
@@ -150,6 +394,7 @@
                         >
                             View Project →
                         </a>
+
 
                         <a
                             href="reports/matlab-dynamic-system-report.pdf"
@@ -167,15 +412,20 @@
             </article>
 
 
-            <!-- CANDY DISPENSER -->
+
+            <!-- =====================
+                 CANDY DISPENSER
+            ====================== -->
 
             <article class="project-card">
 
                 <img
                     src="images/candy-dispenser-main.jpg"
-                    alt="Completed robotic candy dispenser showing the chute and four-bar linkage system"
+                    alt="Completed robotic candy dispenser"
                     class="project-image project-photo"
+                    loading="lazy"
                 >
+
 
                 <div class="project-card-content">
 
@@ -183,28 +433,35 @@
                         Robotics & Embedded Systems
                     </p>
 
+
                     <h3>
                         Robotic Candy Dispenser
                     </h3>
 
+
                     <p>
-                        Developed a team-based robotic dispensing system that used
-                        computer vision, servo control, mechanical linkages, and
-                        Arduino programming to identify inputs and automatically
-                        dispense selected candy.
+                        Developed a team-based robotic dispensing system
+                        using computer vision, servo control, mechanical
+                        linkages, and Arduino programming to identify inputs
+                        and automatically dispense selected candy.
                     </p>
 
+
                     <div class="tech-tags">
+
                         <span>Arduino</span>
                         <span>PixyCam</span>
                         <span>Computer Vision</span>
                         <span>Robotics</span>
                         <span>Servo Control</span>
+
                     </div>
 
+
                     <ul>
+
                         <li>
-                            Programmed Arduino-based control logic for the dispensing system
+                            Programmed Arduino-based control logic
                         </li>
 
                         <li>
@@ -212,9 +469,12 @@
                         </li>
 
                         <li>
-                            Coordinated servo-driven chute and four-bar linkage mechanisms
+                            Coordinated servo-driven dispensing and
+                            linkage mechanisms
                         </li>
+
                     </ul>
+
 
                     <div class="project-links">
 
@@ -224,6 +484,17 @@
                         >
                             View Project →
                         </a>
+
+
+                        <a
+                            href="https://youtube.com/shorts/zyL90W8pS90?si=U88hbHphQnXdbIb9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-button project-button-secondary"
+                        >
+                            Watch Demo
+                        </a>
+
 
                         <a
                             href="reports/candy-dispenser-report.pdf"
@@ -241,7 +512,10 @@
             </article>
 
 
-            <!-- WEATHER BALLOON -->
+
+            <!-- =====================
+                 WEATHER BALLOON
+            ====================== -->
 
             <article class="project-card">
 
@@ -251,34 +525,44 @@
                         Data Analysis & Engineering
                     </p>
 
+
                     <h3>
                         Future Engineers - Weather Balloon Challenge
                     </h3>
 
+
                     <p>
-                        Designed a lightweight weather balloon payload and analyzed
-                        historical climate data to support engineering design decisions.
+                        Designed a lightweight weather balloon payload
+                        and analyzed historical climate data to support
+                        engineering design decisions.
                     </p>
 
+
                     <div class="tech-tags">
+
                         <span>Data Analysis</span>
                         <span>Data Visualization</span>
                         <span>Engineering Design</span>
+
                     </div>
 
+
                     <ul>
+
                         <li>
                             Analyzed 20 years of Los Angeles climate data
                         </li>
 
                         <li>
-                            Created data visualizations and technical documentation
+                            Created data visualizations and technical
+                            documentation
                         </li>
 
                         <li>
-                            Designed a lightweight payload capable of surviving
-                            an eight-foot drop test
+                            Designed a lightweight payload capable of
+                            surviving an eight-foot drop test
                         </li>
+
                     </ul>
 
                 </div>
@@ -288,58 +572,80 @@
         </section>
 
 
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+
         <section id="experience">
 
-            <h2>Experience</h2>
+            <h2>
+                Experience
+            </h2>
+
 
             <article>
 
-                <h3>Readiness Technician</h3>
+                <h3>
+                    Readiness Technician
+                </h3>
 
-                <p>
+
+                <p class="experience-meta">
                     <strong>Stony Brook University</strong>
                     | August 2026 - Present
                 </p>
 
+
                 <ul>
+
                     <li>
                         Perform preventative checks on classroom computers,
-                        projectors, and audiovisual technology
+                        projectors, audiovisual systems, and instructional
+                        technology
                     </li>
 
                     <li>
-                        Troubleshoot minor technical and equipment issues
+                        Identify and troubleshoot minor technical problems
                     </li>
 
                     <li>
-                        Document maintenance activity and technical problems
+                        Document maintenance activity and equipment issues
                         through written reports
                     </li>
+
                 </ul>
 
             </article>
 
 
+
             <article>
 
-                <h3>Engineer Aide</h3>
+                <h3>
+                    Engineer Aide
+                </h3>
 
-                <p>
+
+                <p class="experience-meta">
                     <strong>Consolidated Edison, Inc.</strong>
                     | June 2024 - August 2025
                 </p>
 
+
                 <p>
-                    Worked with engineering and infrastructure data supporting
-                    renewable and distributed energy projects, with a focus on
-                    data analysis, GIS, automation, and process improvement.
+                    Worked with engineering and infrastructure data
+                    supporting renewable and distributed energy projects,
+                    with a focus on data analysis, GIS, automation, and
+                    process improvement.
                 </p>
+
 
                 <ul>
 
                     <li>
-                        Analyzed distributed energy resource data to support
-                        infrastructure-site evaluations
+                        Analyzed distributed energy resource data to
+                        support infrastructure-site evaluations
                     </li>
 
                     <li>
@@ -348,12 +654,12 @@
                     </li>
 
                     <li>
-                        Developed a Python script to automate data comparisons
-                        across systems
+                        Developed a Python script to automate data
+                        comparisons across systems
                     </li>
 
                     <li>
-                        Created a centralized documentation system for project
+                        Created centralized documentation for project
                         updates and technical records
                     </li>
 
@@ -364,28 +670,154 @@
         </section>
 
 
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section id="skills">
+
+            <h2>
+                Skills
+            </h2>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Programming
+                    </h3>
+
+
+                    <div class="skill-tags">
+
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>MATLAB</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Technical Areas
+                    </h3>
+
+
+                    <div class="skill-tags">
+
+                        <span>Data Analysis</span>
+                        <span>Numerical Computing</span>
+                        <span>Object-Oriented Programming</span>
+                        <span>Robotics</span>
+                        <span>Algorithms</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Tools & Technologies
+                    </h3>
+
+
+                    <div class="skill-tags">
+
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Arduino</span>
+                        <span>Fusion 360</span>
+                        <span>ArcFM GIS</span>
+                        <span>Multisim</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
         <section id="contact">
 
-            <h2>Contact</h2>
+            <div class="contact-card">
 
-            <p>
-                Interested in connecting about software, data, quantitative,
-                or technical opportunities? Feel free to reach out.
-            </p>
+                <p class="project-type">
+                    Let's Connect
+                </p>
 
-            <div class="contact-links">
 
-                <a href="mailto:ilan.dascher@stonybrook.edu">
-                    Email
-                </a>
+                <h2>
+                    Contact
+                </h2>
 
-                <a
-                    href="https://www.linkedin.com/in/ilan-dascher-517844379"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
+
+                <p>
+                    I am interested in internship and technical opportunities
+                    involving software development, data, quantitative
+                    problem-solving, and related areas.
+                </p>
+
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="mailto:ilan.dascher@stonybrook.edu"
+                        class="project-button"
+                    >
+                        Email Me
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/ilan-dascher-517844379"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button project-button-secondary"
+                    >
+                        LinkedIn
+                    </a>
+
+
+                    <a
+                        href="https://github.com/ilandascher"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button project-button-secondary"
+                    >
+                        GitHub
+                    </a>
+
+
+                    <a
+                        href="resume/Ilan-Dascher-Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button project-button-secondary"
+                    >
+                        Resume
+                    </a>
+
+                </div>
 
             </div>
 
@@ -394,9 +826,23 @@
     </main>
 
 
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        © 2026 Ilan Dascher
+
+        <p>
+            © 2026 Ilan Dascher
+        </p>
+
+        <p class="footer-subtext">
+            Built with HTML & CSS • Hosted with GitHub Pages
+        </p>
+
     </footer>
+
 
 </body>
 
